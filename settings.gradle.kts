@@ -10,7 +10,16 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
+        maven {
+            name = "ossrh-snapshot"
+            url = uri("https://oss.sonatype.org/content/repositories/snapshots")
+        }
+        maven {
+            url = uri ("https://jitpack.io")
+        }
         maven { url = uri("https://jitpack.io") }
+
     }
 }
 
